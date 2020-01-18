@@ -2,9 +2,7 @@ import { SET_TWEETS, SET_TOP_10_HASHTAGS } from "../types/tweets";
 
 const initialState = {
     tweets: [],
-    meta: {
-        top10Hashtags: {}
-    }
+    top10Hashtags: {}
 };
 
 export interface Action {
@@ -23,10 +21,7 @@ export default function(state = initialState, action: Action) {
     case SET_TOP_10_HASHTAGS: {
         return {
             ...state,
-            meta: {
-                ...state.meta,
-                top10Hashtags: action.payload
-            }
+            top10Hashtags: action.payload
         }
     }
     default:
