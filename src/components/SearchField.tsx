@@ -3,7 +3,7 @@ import { useDebounce } from 'use-debounce';
 
 export interface Props {
     onSearchHandler: (query: string) => void;
-    debounce: number;
+    debounce?: number;
     placeholder: string;
 }
 
