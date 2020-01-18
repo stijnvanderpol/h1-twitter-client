@@ -22,9 +22,8 @@ export const TweetList = ({tweets}: Props) => {
     return ( 
         <ul className={classes.list}>
             {tweets.map(tweet => (
-            <li className={classes.listItem}>
-                <TweetComponent
-                    key={tweet.id}
+            <li className={classes.listItem} key={tweet.id}>
+                <TweetComponent    
                     username={tweet.name}
                     handle={tweet.handle}
                     profilePictureUrl={tweet.profile_picture}
