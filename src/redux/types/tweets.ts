@@ -1,1 +1,2 @@
 export const SET_TWEETS = 'SET_TWEETS';
+export const SET_TOP_10_HASHTAGS = 'SET_TOP_10_HASHTAGS';
