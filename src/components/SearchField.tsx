@@ -1,4 +1,5 @@
 import React, { useState, ChangeEvent, useEffect } from 'react';
+import { createUseStyles } from 'react-jss';
 import { useDebounce } from 'use-debounce';
 
 export interface Props {
@@ -8,7 +9,6 @@ export interface Props {
 }
 
 export const SearchField = ({onSearchHandler, debounce = 500, placeholder}: Props) => {
-
     const [searchString, setSearchString] = useState('')
     const [debouncedSearchString] = useDebounce(searchString, debounce);
 
@@ -23,7 +23,19 @@ export const SearchField = ({onSearchHandler, debounce = 500, placeholder}: Prop
 
     }, [debouncedSearchString]);
 
+    const classes = createUseStyles({
+        input: {
+            margin: 20,
+            fontSize: '2em'
+        }
+    })();
+        
+
     return (
-        <input type="text" onChange={onChangeHandler} placeholder={placeholder} />
+        <input 
+            className={classes.input}
+            type="text" 
+            onChange={onChangeHandler} 
+            placeholder={placeholder} />
     );
 }
