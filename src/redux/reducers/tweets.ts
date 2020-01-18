@@ -1,5 +1,4 @@
 import { SET_TWEETS, SET_TOP_10_HASHTAGS } from "../types/tweets";
-import { stat } from "fs";
 
 const initialState = {
     tweets: [],
