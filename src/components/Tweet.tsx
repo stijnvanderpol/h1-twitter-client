@@ -21,7 +21,8 @@ export const Tweet = ({username, handle, profilePictureUrl, text}: Props) => {
             flexDirection: 'row'
         },
         profilePicture: {
-            borderRadius: '100%'
+            borderRadius: '100%',
+            marginRight: 20,
         },
         nameContainers: {
             display: 'flex',
@@ -42,7 +43,7 @@ export const Tweet = ({username, handle, profilePictureUrl, text}: Props) => {
                 {profilePictureUrl && <img className={classes.profilePicture} src={profilePictureUrl} />}
                 <div className={classes.nameContainers}>
                 <span className={classes.username}>{username}</span>
-                <span className={classes.handle}>{handle}</span>
+                <span className={classes.handle}>#{handle}</span>
                 </div>
             </div>
             <p>
