@@ -12,9 +12,10 @@ export const Tweet = ({username, handle, profilePictureUrl, text}: Props) => {
     const classes = createUseStyles({
         container: {
             width: 700,
-            border: '1px solid #dedede',
+            border: '1px solid #828282',
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
+            padding: 20
         },
         userInfoContainer: {
             display: 'flex',
@@ -32,7 +33,7 @@ export const Tweet = ({username, handle, profilePictureUrl, text}: Props) => {
             fontWeight: 'bold'
         },
         handle: {
-            color: '#dedede'
+            color: '#828282'
         }
     })();
 
