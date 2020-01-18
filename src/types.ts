@@ -6,9 +6,11 @@ export interface Tweet {
     contents: string;
 }
 
+export type HashtagCount = {[hashtag: string]: number};
+
 export interface SearchTweets {
     tweets: Tweet[],
     meta: {
-        top10Hashtags: {[hashtag: string]: number}
+        top10Hashtags: HashtagCount
     }
 }
