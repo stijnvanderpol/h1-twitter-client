@@ -8,7 +8,6 @@ export const HomePage = () => {
     const classes = createUseStyles({
         'container': {
             width: 1200,
-            backgroundColor: 'red',
             marginLeft: 'auto',
             marginRight: 'auto'
         }
