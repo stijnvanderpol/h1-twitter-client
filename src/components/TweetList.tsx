@@ -13,14 +13,18 @@ export const TweetList = ({tweets}: Props) => {
             listStyle: 'none',
             margin: 0,
             padding: 0
+        },
+        listItem: {
+            marginBottom: 20
         }
     })();
 
     return ( 
         <ul className={classes.list}>
             {tweets.map(tweet => (
-            <li>
+            <li className={classes.listItem}>
                 <TweetComponent
+                    key={tweet.id}
                     username={tweet.name}
                     handle={tweet.handle}
                     profilePictureUrl={tweet.profile_picture}
