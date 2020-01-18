@@ -1,4 +1,10 @@
 import { SET_TWEETS, SET_TOP_10_HASHTAGS } from "../types/tweets";
+import { Tweet, HashtagCount } from '../../types';
+
+export interface TweetsState {
+    tweets: Tweet[],
+    top10Hashtags: HashtagCount
+}
 
 const initialState = {
     tweets: [],

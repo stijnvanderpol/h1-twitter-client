@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {createUseStyles} from 'react-jss'
 
-import { Tweet } from '../components/Tweet';
 import { TweetSearchField } from '../containers/TweetSearchField';
+import { ConnectedTweetList } from '../containers/ConnectedTweetList';
 
 export const HomePage = () => {
     const classes = createUseStyles({
@@ -17,13 +17,7 @@ export const HomePage = () => {
     return (
         <div className={classes.container}>
             <TweetSearchField />
-
-            <Tweet 
-                username="stijnvanderpol"
-                handle="@stijnio"
-                profilePictureUrl=""
-                text="Hello world!"
-            />
+            <ConnectedTweetList />
         </div>
     )
 };
