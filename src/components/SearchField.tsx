@@ -26,6 +26,7 @@ export const SearchField = ({onSearchHandler, debounce = 500, placeholder}: Prop
     const classes = createUseStyles({
         input: {
             margin: 20,
+            marginLeft: 0,
             fontSize: '2em'
         }
     })();
