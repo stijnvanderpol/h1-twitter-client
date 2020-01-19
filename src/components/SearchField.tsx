@@ -21,7 +21,7 @@ export const SearchField = ({onSearchHandler, debounce = 500, placeholder}: Prop
             onSearchHandler(debouncedSearchString)
         }
 
-    }, [debouncedSearchString]);
+    }, [debouncedSearchString, onSearchHandler]);
 
     const classes = createUseStyles({
         input: {
