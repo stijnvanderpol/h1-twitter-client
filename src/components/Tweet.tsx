@@ -44,7 +44,7 @@ export const Tweet = ({username, handle, profilePictureUrl, text}: Props) => {
                 {profilePictureUrl && <img className={classes.profilePicture} src={profilePictureUrl} />}
                 <div className={classes.nameContainers}>
                 <span className={classes.username}>{username}</span>
-                <span className={classes.handle}>#{handle}</span>
+                <span className={classes.handle}>@{handle}</span>
                 </div>
             </div>
             <p>
